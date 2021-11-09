@@ -10,7 +10,7 @@ public class Tablero {
 	
 	public void cambiarCasilla(int x,int y, char value) {
 		
-		this.tablero[x][y] = value;
+		this.tablero[y][x] = value;
 		
 	}
 	
@@ -23,6 +23,11 @@ public class Tablero {
 			tableroString = tableroString + "\n";
 		}
 		return tableroString;
+	}
+	
+	public boolean estaResuelto() {
+		
+		return false;
 	}
 
 	public char[][] getTablero() {
